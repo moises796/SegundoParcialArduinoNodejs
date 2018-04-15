@@ -15,7 +15,7 @@ const bot = new TelegramBot(token, {
 
 
 bot.onText(/\/start/, (msg, match) => {
-  bot.sendMessage(msg.chat.id, "Bienvenido", {
+  bot.sendMessage(msg.chat.id, "Bienvenido, presiona el boton en Arduino para comenzar con el conteo", {
 "reply_markup": {
   "resize_keyboard":true,
     "keyboard": [["Reiniciar"]]
