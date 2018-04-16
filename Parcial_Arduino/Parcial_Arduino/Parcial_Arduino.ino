@@ -10,7 +10,7 @@ void setup() {
  
 void loop(){
   value = digitalRead(pin);  //lectura digital de pin
-   Serial.begin(9600); 
+   //Serial.begin(9600); 
   reinicio=Serial.read();
   if(reinicio=='R'){
     i=0;
@@ -24,7 +24,7 @@ void loop(){
      i=i+1;
      Serial.print(i);
      //Serial.write(i);
-     Serial.end();
+    // Serial.end();
     }
    
   delay(500);
